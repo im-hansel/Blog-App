@@ -9,7 +9,7 @@
     
     <ul>
         {% for blog in blogs %}
-        <li><a href="{% url 'detail' blog.slug %}">{{blog.title}}</a></li>
+        <li><a href="{{blog.get_absolute_url}}">{{blog.title}}</a></li>
         {% endfor %}
     </ul>
 
